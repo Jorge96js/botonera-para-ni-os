@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablero</title>
+
+    <link rel="stylesheet" href="sweetalert2.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="../build/css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="../index.html">
+                <img src="../logo-header.png" alt="municipio logo">
+            </a>
+        </div>
+
+
+        <nav class="navegacion">
+            <div class="herramientas">
+                <li><a href="../login.html">Iniciar sesion</a></li>
+                <li><a href="../botonera.html">
+                    <img src="https://icons.iconarchive.com/icons/custom-icon-design/flat-cute-arrows/512/Arrow-Left-icon.png" class="volver" alt="">
+                </a></li>
+                <li><button onclick="alerta()"  class="help-btn">? Ayuda</button></li>
+                <li><a class=" dark-mode-boton"><i class="bi bi-lightbulb-fill"></i></a></li>
+
+            </div>
+        </nav>
+    </header>
+
+    <main class="contenedor">
+        <h1 class="nombre-pagina">Jefe de gabinete</h1>
+
+        <div class="diagrama">
+            <div class="bloque1">
+                <h3>INTENDENTE
+                <br>    JULIO ALAK</h3>
+            </div>
+
+            <div class="bloque2">
+                <h3>Jefe de gabinete</h3>
+            </div>
+
+            <div class="barra-diagrama">
+                <div class="bloque3">
+                    <h4>UNIDAD EJECUTORA DE EFICACIA ADMINISTRATIVA E INFORMACIÓN ESTRATÉGICA</h4>
+                </div>
+
+                <div class="bloque3">
+                    <h4>SS. RECURSOS HUMANOS</h4>
+                </div>
+
+                <div class="bloque3">
+                    <h4>SS. COMUNICACIÓN POLÍTICA</h4>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../build/javascript/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</body>
+</html>

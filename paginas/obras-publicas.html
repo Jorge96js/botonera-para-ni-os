@@ -9,19 +9,23 @@
     <link rel="stylesheet" href="sweetalert2.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-    <link rel="stylesheet" href="build/css/style.css">
+    <link rel="stylesheet" href="../build/css/style.css">
 </head>
 <body>
     <header class="header">
         <div class="logo">
-            <a href="index.html">
-                <img src="logo-header.png" alt="municipio logo">
+            <a href="../index.html">
+                <img src="../logo-header.png" alt="municipio logo">
             </a>
         </div>
 
+
         <nav class="navegacion">
             <div class="herramientas">
-                <li><a href="login.html">Iniciar sesion</a></li>
+                <li><a href="../login.html">Iniciar sesion</a></li>
+                <li><a href="../botonera.html">
+                    <img src="https://icons.iconarchive.com/icons/custom-icon-design/flat-cute-arrows/512/Arrow-Left-icon.png" class="volver" alt="">
+                </a></li>
                 <li><button onclick="alerta()"  class="help-btn">? Ayuda</button></li>
                 <li><a class=" dark-mode-boton"><i class="bi bi-lightbulb-fill"></i></a></li>
 
@@ -29,12 +33,12 @@
         </nav>
     </header>
 
-    <main class="contenedor-menus">
-        <a href="botonera.html" class="btn"><h3>Organigrama</h3></a>
-        <a href="seguimiento-gestion.html" class="btn"><h3>Seguimiento de la gestión</h3></a>
+    <main class="contenedor">
+        <h1 class="nombre-pagina">SECRETARIA DE OBRAS PÚBLICAS, PLANEAMIENTO Y ESPACIOS PÚBLICOS</h1>
+        <img src="../src/imagenes/diagramas/S. OBRAS PUBLICAS.png" alt="">
     </main>
 
-    <script src="build/javascript/app.js"></script>
+    <script src="../build/javascript/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 </body>

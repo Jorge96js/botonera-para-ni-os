@@ -1,0 +1,34 @@
+@use 'base/variables' as v;
+
+.contenedor-menus{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: 80%;
+    margin: 3rem auto;
+    .btn{
+        text-align: center;
+        background-color: v.$azul;
+         &:hover{
+            background-color: v.$rojo;
+         }
+    }
+}
+
+.contenedor-seguimiento{
+    display: grid;
+    gap: 1rem;
+    width: 80%;
+    margin: 3rem auto;
+    grid-template-columns: repeat(2,1fr);
+
+    .btn{
+        text-align: center;
+        background-color: v.$azul;
+        height: 15rem;
+        &:hover{
+            background-color: v.$rojo;
+        }
+    }
+
+}

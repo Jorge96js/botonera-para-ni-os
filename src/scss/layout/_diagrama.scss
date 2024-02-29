@@ -1,0 +1,45 @@
+@use 'base/variables' as v;
+
+.diagrama{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+
+    .bloque1{
+        background-color: v.$rojo;
+        color: v.$white;
+        max-width: 40rem;
+        min-width: 30rem;
+        text-align: center;
+        padding:1rem;
+    }
+
+    .bloque2{
+        max-width: 40rem;
+        min-width: 30rem;
+        max-width: 80%;
+        text-align: center;
+        background-color: orange;
+        color: v.$white;
+        padding:1rem;
+    }
+
+    .barra-diagrama{
+        display: flex;
+        flex-direction: row;
+        gap: 3rem;
+        .bloque3{
+            background-color: orangered;
+            width: 20rem;
+            text-align: center;
+            color: v.$white;
+            padding:.5rem 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.4rem;
+        }
+    }
+}

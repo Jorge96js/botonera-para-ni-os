@@ -226,3 +226,75 @@ button {
 .contenedor-botones .btn:hover {
   background-color: #e03c5f;
 }
+
+.contenedor-menus {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  width: 80%;
+  margin: 3rem auto;
+}
+.contenedor-menus .btn {
+  text-align: center;
+  background-color: #243464;
+}
+.contenedor-menus .btn:hover {
+  background-color: #dd264d;
+}
+
+.contenedor-seguimiento {
+  display: grid;
+  gap: 1rem;
+  width: 80%;
+  margin: 3rem auto;
+  grid-template-columns: repeat(2, 1fr);
+}
+.contenedor-seguimiento .btn {
+  text-align: center;
+  background-color: #243464;
+  height: 15rem;
+}
+.contenedor-seguimiento .btn:hover {
+  background-color: #dd264d;
+}
+
+.diagrama {
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+  justify-content: center;
+  align-items: center;
+}
+.diagrama .bloque1 {
+  background-color: #dd264d;
+  color: #fcfcfd;
+  max-width: 40rem;
+  min-width: 30rem;
+  text-align: center;
+  padding: 1rem;
+}
+.diagrama .bloque2 {
+  max-width: 40rem;
+  min-width: 30rem;
+  max-width: 80%;
+  text-align: center;
+  background-color: orange;
+  color: #fcfcfd;
+  padding: 1rem;
+}
+.diagrama .barra-diagrama {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+}
+.diagrama .barra-diagrama .bloque3 {
+  background-color: orangered;
+  width: 20rem;
+  text-align: center;
+  color: #fcfcfd;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.4rem;
+}
