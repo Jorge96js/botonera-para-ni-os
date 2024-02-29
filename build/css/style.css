@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fcfcfd;
+  color: #fcfcfd;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.contenedor {
+  width: 95%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.seccion {
+  padding: 5rem 0;
+}
+
+.nombre-pagina {
+  text-align: center;
+  margin: 5rem 0;
+  font-weight: bold;
+  color: #000;
+}
+
+.descripcion-pagina {
+  text-align: center;
+}
+
+/** Media Queries **/
+.btn {
+  background-color: #df1c45;
+  border-radius: 0.3rem;
+  font-weight: bold;
+  color: #fff;
+  width: 100%;
+  height: 15rem;
+  padding: 0.5rem;
+}
+
+.volver {
+  position: absolute;
+  left: 5rem;
+  top: 8rem;
+  width: 5rem;
+}
+
+.help-btn {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  border-radius: 0.3rem;
+  padding: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.help-btn:hover {
+  background-color: #1d2a51;
+}
+
+button {
+  background-color: transparent;
+}
+
+.boton {
+  border: none;
+  display: block;
+  width: 15rem;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+.boton-rojo {
+  background-color: #dd264d;
+  color: #fff;
+  font-weight: bold;
+  margin: 0 auto;
+}
+.boton-rojo:hover {
+  background-color: #ca2044;
+}
+
+.dark-mode {
+  background-color: #151518;
+}
+.dark-mode p {
+  color: #E6EDF3;
+}
+.dark-mode a, .dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4 {
+  color: #E6EDF3;
+}
+.dark-mode .swal2-title {
+  color: #2c2c34;
+}
+.dark-mode .formulario fieldset, .dark-mode label, .dark-mode legend, .dark-mode p {
+  color: #E6EDF3;
+}
+.dark-mode .formulario fieldset input:not([type=submit]), .dark-mode .formulario fieldset textarea, .dark-mode .formulario fieldset select, .dark-mode label input:not([type=submit]), .dark-mode label textarea, .dark-mode label select, .dark-mode legend input:not([type=submit]), .dark-mode legend textarea, .dark-mode legend select, .dark-mode p input:not([type=submit]), .dark-mode p textarea, .dark-mode p select {
+  background-color: #2c2c34;
+  color: #E6EDF3;
+}
+.dark-mode .formulario {
+  border: 1px solid #E6EDF3;
+  color: #E6EDF3;
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+  width: 80%;
+  margin: auto;
+  padding: 5rem;
+  border-radius: 0.5rem;
+  color: #000;
+  gap: 5rem;
+  margin-bottom: 5rem;
+}
+.formulario .field {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+}
+.formulario .field input {
+  border: none;
+  border-radius: 0.5rem;
+  height: 3rem;
+  padding: 0 1rem;
+  outline: none;
+  width: 90%;
+}
+
+.header {
+  background-color: #293458;
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.navegacion {
+  display: flex;
+  flex-direction: row;
+  height: 5rem;
+  width: 100%;
+  justify-content: flex-end;
+  overflow: hidden;
+  padding: 0.5rem 2rem;
+  align-items: center;
+}
+.navegacion .volver {
+  transition: transform 0.3s ease-in-out;
+}
+.navegacion .volver:hover {
+  animation: temblar 0.1s infinite alternate;
+  animation-play-state: running;
+}
+.navegacion .volver.clicked {
+  animation: none;
+  transition: transform 0.3s ease-in-out;
+  transform: rotateZ(0deg);
+}
+@keyframes temblar {
+  0% {
+    transform: rotateZ(-3deg);
+  }
+  100% {
+    transform: rotateZ(3deg);
+  }
+}
+
+.herramientas {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.contenedor-botones {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  gap: 1rem;
+  object-fit: cover;
+  width: 80%;
+  margin: 0 auto;
+  padding: 5rem 0;
+  text-align: center;
+}
+.contenedor-botones .btn {
+  transition: all 0.2s ease-in-out;
+}
+.contenedor-botones .btn:hover {
+  background-color: #e03c5f;
+}

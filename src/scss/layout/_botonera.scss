@@ -1,0 +1,23 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenedor-botones{
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(
+        15rem,
+        1fr
+    ));
+    gap: 1rem;
+    object-fit: cover;
+    width: 80%;
+    margin:0 auto;
+    padding: 5rem 0;
+    text-align: center;
+    
+    .btn{
+        transition: all .2s ease-in-out;
+        &:hover{
+            background-color: lighten(v.$rojo, 5%);
+        }
+    }
+}

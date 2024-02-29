@@ -1,0 +1,44 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.navegacion{
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    width: 100%;
+    justify-content: flex-end;
+    overflow: hidden;
+    padding: .5rem 2rem;
+    align-items: center;
+
+    .volver {
+        transition: transform .3s ease-in-out;
+    
+        &:hover {
+            animation: temblar .1s infinite alternate; 
+            animation-play-state: running; 
+        }
+    
+        &.clicked {
+            animation: none; 
+            transition: transform .3s ease-in-out;
+            transform: rotateZ(0deg); 
+        }
+    
+        @keyframes temblar {
+            0% {
+                transform: rotateZ(-3deg);
+            }
+            100% {
+                transform: rotateZ(3deg);
+            }
+        }
+    }
+    
+}
+
+.herramientas{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
