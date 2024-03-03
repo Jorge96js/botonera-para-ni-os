@@ -14,20 +14,22 @@
         color: #2c2c34;
     }
 
-    .formulario fieldset,label, legend, p{
-        color: #E6EDF3;
+    .login fieldset,label, legend, p{
+        color: #1d1d1d;
 
         input:not([type="submit"]), textarea, select{
 
             background-color:  #2c2c34;
-            color: #E6EDF3;
+            color: #1d1d1d;
 
         }
+
     }
 
     
-    .formulario{
+    .login{
         border: 1px solid #E6EDF3;
-        color: #E6EDF3;
+        color: #1d1d1d;
+        box-shadow: none;
     }
 }

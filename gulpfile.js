@@ -9,7 +9,7 @@ function css(done){
     //Compilarlo
     .pipe(sass())
     //Almacenarla en el disco duro
-    .pipe(dest("build/css"))
+    .pipe(dest("public/build/css"))
     done();
 }
 
@@ -17,7 +17,7 @@ function javascript(done){
     
     src('src/javascript/**/*.js')
     .pipe(terser())
-    .pipe(dest("build/javascript"))
+    .pipe(dest("public/build/javascript"))
     done();
 }
 
