@@ -15,9 +15,14 @@
     text-align: center;
     
     .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         transition: all .2s ease-in-out;
+        text-transform: uppercase;
         &:hover{
             background-color: lighten(v.$rojo, 5%);
         }
+
     }
 }

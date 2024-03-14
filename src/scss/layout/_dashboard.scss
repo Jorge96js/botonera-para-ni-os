@@ -8,7 +8,12 @@
     margin: 3rem auto;
     .btn{
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         background-color: v.$azul;
+        text-transform: uppercase;
          &:hover{
             background-color: v.$rojo;
          }
@@ -26,6 +31,11 @@
         text-align: center;
         background-color: v.$azul;
         height: 15rem;
+        text-transform: uppercase;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
         &:hover{
             background-color: v.$rojo;
         }

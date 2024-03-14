@@ -21,7 +21,7 @@
 
         <nav class="navegacion">
             <div class="herramientas">
-                <li><a href="login.html">Iniciar sesion</a></li>
+                <li><a href="<?php echo "/login"; ?>">Iniciar sesion</a></li>
                 <li><button onclick="alerta()"  class="help-btn">? Ayuda</button></li>
                 <li><a class=" dark-mode-boton"><i class="bi bi-lightbulb-fill"></i></a></li>
 

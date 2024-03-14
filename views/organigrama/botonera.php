@@ -1,39 +1,4 @@
-
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tablero</title>
-
-    <link rel="stylesheet" href="sweetalert2.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
-    <link rel="stylesheet" href="public/build/css/style.css">
-</head>
-<body>
-    <header class="header">
-        <div class="logo">
-            <a href="index.html">
-                <img src="logo-header.png" alt="municipio logo">
-            </a>
-        </div>
-
-
-        <nav class="navegacion">
-            <div class="herramientas">
-                <li><a href="login.html">Iniciar sesion</a></li>
-                <li><a href="index.html">
-                    <img src="https://icons.iconarchive.com/icons/custom-icon-design/flat-cute-arrows/512/Arrow-Left-icon.png" class="volver" alt="">
-                </a></li>
-                <li><button onclick="alerta()"  class="help-btn">? Ayuda</button></li>
-                <li><a class=" dark-mode-boton"><i class="bi bi-lightbulb-fill"></i></a></li>
-
-            </div>
-        </nav>
-    </header>
-
-    <main class="contenedor-botones">
+<main class="contenedor-botones">
         <div class="btn"><a href="paginas/gabinete.html">Jefe de gabinete</a></div>
         <div class="btn"><a href="paginas/obras-publicas.html">SECRETARIA DE OBRAS PÚBLICAS, PLANEAMIENTO Y ESPACIOS PÚBLICOS</a></div>
         <div class="btn"><a href="paginas/secretaria-hacienda-y-finanzas.html">SECRETARIA DE HACIENDA Y FINANZAS</a></div>
@@ -59,9 +24,3 @@
         <div class="btn"><a href="paginas/gabinete.html">SECRETARIA DE</a></div>
         <div class="btn"><a href="paginas/gabinete.html">SECRETARIA DE</a></div>
     </main>
-
-    <script src="build/javascript/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-</body>
-</html>
